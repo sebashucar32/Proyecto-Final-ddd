@@ -3,14 +3,8 @@ package co.com.sofka.tienda.casostienda;
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
-import co.com.sofka.ddd.instalacion.event.InstalacionCreada;
-import co.com.sofka.ddd.instalacion.event.MaquinaAgregada;
-import co.com.sofka.ddd.instalacion.value.Descripcion;
-import co.com.sofka.ddd.instalacion.value.MaquinaId;
-import co.com.sofka.ddd.instalacion.value.TipoMaquina;
 import co.com.sofka.ddd.tienda.SillaFactory;
 import co.com.sofka.ddd.tienda.command.AgregarSillaCommand;
-import co.com.sofka.ddd.tienda.event.ProductoCreado;
 import co.com.sofka.ddd.tienda.event.SillaCreada;
 import co.com.sofka.ddd.tienda.event.TiendaCreada;
 import co.com.sofka.ddd.tienda.value.*;
@@ -26,6 +20,7 @@ import java.util.List;
 
 import static org.mockito.Mockito.when;
 
+@ExtendWith(MockitoExtension.class)
 public class AgregarSillaCasoDeUsoTest {
     @Mock
     DomainEventRepository repository;
@@ -48,8 +43,8 @@ public class AgregarSillaCasoDeUsoTest {
     public void agregarSillaAlaTienda() {
         SillaFactory factory = SillaFactory.getInstance()
                 .add(SillaId.of("pro"), new Peso("100kg"), new Longitud("100cm"))
-                .add(SillaId.of("pro"), new Peso("112kg"), new Longitud("110cm"))
-                .add(SillaId.of("pro"), new Peso("130kg"), new Longitud("120cm"));
+                .add(SillaId.of("pro1"), new Peso("112kg"), new Longitud("110cm"))
+                .add(SillaId.of("pro2"), new Peso("130kg"), new Longitud("120cm"));
 
         TiendaId tiendaId = new TiendaId();
         var command = new AgregarSillaCommand(factory, tiendaId);

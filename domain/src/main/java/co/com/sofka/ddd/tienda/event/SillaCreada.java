@@ -6,19 +6,19 @@ import co.com.sofka.ddd.tienda.value.SillaId;
 import co.com.sofka.domain.generic.DomainEvent;
 
 public class SillaCreada extends DomainEvent {
-    private final SillaId sillaId;
+    private final SillaId identity;
     private final Peso peso;
     private final Longitud longitud;
 
-    public SillaCreada(SillaId sillaId, Peso peso, Longitud longitud) {
+    public SillaCreada(SillaId identity, Peso peso, Longitud longitud) {
         super("tienda.SillaCreada");
-        this.sillaId = sillaId;
+        this.identity = identity;
         this.peso = peso;
         this.longitud = longitud;
     }
 
-    public SillaId getSillaId() {
-        return sillaId;
+    public SillaId getIdentity() {
+        return identity;
     }
 
     public Peso getPeso() {

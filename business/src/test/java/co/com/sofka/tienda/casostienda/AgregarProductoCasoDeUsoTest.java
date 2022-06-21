@@ -3,11 +3,6 @@ package co.com.sofka.tienda.casostienda;
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
-import co.com.sofka.ddd.instalacion.event.InstalacionCreada;
-import co.com.sofka.ddd.instalacion.event.MaquinaAgregada;
-import co.com.sofka.ddd.instalacion.value.Descripcion;
-import co.com.sofka.ddd.instalacion.value.MaquinaId;
-import co.com.sofka.ddd.instalacion.value.TipoMaquina;
 import co.com.sofka.ddd.tienda.ProductoFactory;
 import co.com.sofka.ddd.tienda.command.AgregarProductoCommand;
 import co.com.sofka.ddd.tienda.event.ProductoCreado;
@@ -25,6 +20,7 @@ import java.util.List;
 
 import static org.mockito.Mockito.when;
 
+@ExtendWith(MockitoExtension.class)
 public class AgregarProductoCasoDeUsoTest {
     @Mock
     DomainEventRepository repository;

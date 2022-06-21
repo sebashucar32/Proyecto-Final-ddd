@@ -12,7 +12,9 @@ import java.util.HashSet;
 public class TiendaChange extends EventChange {
     public TiendaChange(Tienda tienda) {
         apply((TiendaCreada event) -> {
+            tienda.productos = new HashSet<>();
             tienda.televisor = new Televisor();
+            tienda.sillas = new HashSet<>();
             tienda.accesorios = null;
         });
 
@@ -21,7 +23,7 @@ public class TiendaChange extends EventChange {
         });
 
         apply((SillaCreada event) -> {
-            tienda.sillas.add(new Silla(event.getSillaId(), event.getPeso(), event.getLongitud()));
+            tienda.sillas.add(new Silla(event.getIdentity(), event.getPeso(), event.getLongitud()));
         });
     }
 }
