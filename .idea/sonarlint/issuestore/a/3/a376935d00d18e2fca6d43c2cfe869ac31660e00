@@ -1,0 +1,12 @@
+
+B
+java:S1602",Remove useless curly braces around statement(‹ø×°
+G
+java:S1602",Remove useless curly braces around statement(ï¼ıÿÿÿÿ
+[
+java:S1128"ERemove this unused import 'co.com.sofka.ddd.tienda.value.ProductoId'.(æ”¿Ú
+]
+java:S1128"BRemove this unused import 'co.com.sofka.ddd.tienda.value.SillaId'.(ÿ››½ıÿÿÿÿ
+C
+java:S1128
+".Remove this unused import 'java.util.HashSet'.(Ê‚êX
