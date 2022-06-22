@@ -1,5 +1,6 @@
 package co.com.sofka.ddd.persona.event;
 
+import co.com.sofka.ddd.persona.value.Correo;
 import co.com.sofka.ddd.persona.value.NombreCompleto;
 import co.com.sofka.domain.generic.DomainEvent;
 

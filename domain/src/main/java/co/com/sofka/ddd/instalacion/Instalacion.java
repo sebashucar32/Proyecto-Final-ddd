@@ -2,8 +2,10 @@ package co.com.sofka.ddd.instalacion;
 
 import co.com.sofka.ddd.instalacion.event.InstalacionCreada;
 import co.com.sofka.ddd.instalacion.event.MaquinaAgregada;
+import co.com.sofka.ddd.instalacion.event.TemperaturaCambiada;
 import co.com.sofka.ddd.instalacion.value.InstalacionId;
 import co.com.sofka.ddd.instalacion.value.Sede;
+import co.com.sofka.ddd.instalacion.value.Temperatura;
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 
@@ -25,6 +27,12 @@ public class Instalacion extends AggregateEvent<InstalacionId> {
     public Instalacion(InstalacionId instalacionId) {
         super(instalacionId);
         subscribe(new InstalacionChange(this));
+    }
+
+    public Instalacion(InstalacionId instalacionId, Temperatura temperatura, Temperatura temperaturaCambiada) {
+        super(instalacionId);
+        subscribe(new InstalacionChange(this));
+        appendChange(new TemperaturaCambiada(temperatura, temperaturaCambiada)).apply();
     }
 
     public static Instalacion from(InstalacionId instalacionId, List<DomainEvent> eventsBy) {

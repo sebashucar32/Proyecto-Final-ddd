@@ -11,8 +11,6 @@ m
 =domain/src/main/java/co/com/sofka/ddd/tienda/value/Marca.java,5\f\5f4f42e2b2f857c7af9b7261edeb9073d57ce213
 s
 Cdomain/src/main/java/co/com/sofka/ddd/instalacion/value/Madera.java,4\0\40a28f7580d3e2e2de5c5fba84281f24cf4943b3
-x
-Hdomain/src/main/java/co/com/sofka/ddd/instalacion/value/Temperatura.java,f\d\fd9441dca496951463422b3eab43fc106aa850ec
 t
 Ddomain/src/main/java/co/com/sofka/ddd/instalacion/value/Azulejo.java,4\b\4b6fdf78dbfaa5363568fb80f3f23a11c4f44e72
 k
@@ -31,8 +29,6 @@ y
 Idomain/src/main/java/co/com/sofka/ddd/persona/event/CorreoNotificado.java,e\6\e6e5d5f92b7039c946823829134bc4ba27f2f3bb
 j
 :domain/src/main/java/co/com/sofka/ddd/persona/Cliente.java,a\3\a3399ba17a2c35524ae06096115002475ef12ab4
-o
-?domain/src/main/java/co/com/sofka/ddd/persona/value/Correo.java,e\b\ebf12939e94e91a80d514e7fbd95fe8f6d0824c8
 w
 Gdomain/src/main/java/co/com/sofka/ddd/persona/value/NombreCompleto.java,2\a\2ad894c71bdbbbabd4e08ba5d6c25784a273fee0
 ~
@@ -41,14 +37,10 @@ Ndomain/src/main/java/co/com/sofka/ddd/persona/command/CrearPersonaCommand.java
 Sbusiness/src/main/java/co/com/sofka/persona/casospersona/CrearPersonaCasoDeUso.java,8\c\8c0015d28b2d8ae02d993700f251544edc0b9c08
 @
 business/pom.xml,d\4\d4ebdfff43bfaf86e620b416afb4835b5f67b594
-
-Odomain/src/main/java/co/com/sofka/ddd/persona/event/NombreCompletoCambiado.java,0\e\0e8d26f943595a3c75f387513a5cf1ca202a00ba
 v
 Fdomain/src/main/java/co/com/sofka/ddd/persona/event/PersonaCreada.java,3\f\3f588d1d31c5a0564d0e36f6c74fd23214b27274
 r
 Bdomain/src/main/java/co/com/sofka/ddd/persona/value/PersonaId.java,5\1\51429e6e98a25b1989fb37eba495cdd606aafcdf
-†
-Vbusiness/src/main/java/co/com/sofka/persona/casospersona/NotificarCorreoCasoDeUso.java,8\1\81cfd0d964f59805816defeea6f679190b183f52
 †
 Vbusiness/src/main/java/co/com/sofka/tienda/casostienda/ModificarProductoCasoDeUso.java,0\7\076998873dd43d871c88b1f64332d42ec1ece5b8
 Š
@@ -95,8 +87,6 @@ Mdomain/src/main/java/co/com/sofka/ddd/persona/command/CrearAsesorCommand.java,
 Sdomain/src/main/java/co/com/sofka/ddd/persona/command/AgregarInstructorCommand.java,6\8\68943c127b61e8b598a3276857074f2fe04dde8e
 †
 Vbusiness/src/main/java/co/com/sofka/persona/casospersona/CrearInstructorCasoDeUso.java,f\1\f1a7355f9c47be7b94a6541c8f999b2ef3964c9d
-ˆ
-Xbusiness/src/test/java/co/com/sofka/persona/casospersona/CambiarNombreCasoDeUsoTest.java,7\7\772127e6c292d73fe8ce6fef8dde541efc1f91a0
 †
 Vbusiness/src/test/java/co/com/sofka/persona/casospersona/CrearAsesorCasoDeUsoTest.java,2\8\283e1da93404c1182dfdb751deca118dc20f6b1f
 Š
@@ -111,10 +101,6 @@ x
 Hdomain/src/main/java/co/com/sofka/ddd/instalacion/value/Descripcion.java,c\1\c12448fcb2f54550ba765367bdaca07732b4141e
 u
 Edomain/src/main/java/co/com/sofka/ddd/tienda/value/TipoCategoria.java,d\2\d253f18dbc7044f6095250fef38cc147cc526252
-l
-<domain/src/main/java/co/com/sofka/ddd/instalacion/Sauna.java,a\2\a283a0fdebcf24cf2500cf579dc6a5534460c848
-l
-<domain/src/main/java/co/com/sofka/ddd/instalacion/Turco.java,8\c\8c87666e24d0aad5139a8280edd0b167fe59ba92
 j
 :domain/src/main/java/co/com/sofka/ddd/tienda/Producto.java,d\0\d0d2e2f9e4fed1b4e766bbc965042a887efd1c91
 g
@@ -125,10 +111,6 @@ o
 ?domain/src/main/java/co/com/sofka/ddd/tienda/value/SillaId.java,7\7\77dd0f6f52b9a69a8481b8a0f03265572edc1828
 q
 Adomain/src/main/java/co/com/sofka/ddd/persona/value/AsesorId.java,5\0\50f810a47d45f060cb9100634dab29094138e744
-p
-@domain/src/main/java/co/com/sofka/ddd/persona/PersonaChange.java,6\7\67a5e9e601bb4c069302df6e0eea3939ec33a605
-j
-:domain/src/main/java/co/com/sofka/ddd/persona/Persona.java,5\7\576f8b5066634f3ef949aaf0fed2f48f3aa66228
 ‚
 Rbusiness/src/main/java/co/com/sofka/persona/casospersona/CrearAsesorCasoDeUso.java,0\9\092b4bccad1bc92386fff765792d1cb3f36a15c4
 €
